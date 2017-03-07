@@ -1,38 +1,33 @@
-.container{
+section{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: center;
     margin:auto;
 }
-.picture{
+figure{
     margin:10px;
     border:1px solid black;
     display:flex;
-    height: 20%;
+    justify-content: center;
+    height: 170px;
     width: 20%;
-    padding:0;
+    
 }
-figure{
-    margin:0 auto;
-    padding:0;
-}
-
-
-
    @media only screen and (max-width : 480px) {
-        .picture{
+        figure{
             width:80%;
         }
     }
      @media only screen and (min-width : 480px) and (max-width:992px) {
-        .picture{
+        figure{
             width:40%;
         }
     }
 
   @media only screen and (min-width : 1200px) {
-        .container{
+        section{
             width:1200px;
         }
     }
